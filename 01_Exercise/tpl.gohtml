@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car List</title>
+</head>
+<body>
+<h1>{{.Name}}</h1>
+{{if .TaxDeduct}}
+<h1>Is Tax Incentive Car</h1>
+<h1>Engine: {{.Engine}}</h1>
+{{else}}
+<h1>Is Not Tax Credit!</h1>
+<h1>Engine: {{.Engine}}</h1>
+{{end}}
+</body>
+</html>
