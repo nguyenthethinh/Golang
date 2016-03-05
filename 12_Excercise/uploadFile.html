@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Name Form</title>
+</head>
+<body>
+<form action="http://localhost:8080/upload" method="POST" enctype="multipart/form-data">
+    <label for="fileName">Filename:</label>
+    <input type="file" name="fileName" id="fileName" autofocus>
+    <input type="submit" name="submit" value="Upload">
+</form>
+<p>File content</p>
+<textarea rows="30" cols="100" readonly> {{.Content}} </textarea>
+</body>
+</html>
