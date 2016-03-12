@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8"/>
+    <title>User information</title>
+</head>
+<body>
+    <form action="http://localhost:8080/setcookie" method="post">
+        Name:<br>
+        <input type="text" name="name"><br>
+        Age:<br>
+        <input type="text" name="age">
+        <br>
+        <input type="submit" value="Set">
+        <br>
+
+    </form>
+    <p>
+        Cookies json encode: {{.Cookie}}
+    </p>
+</body>
+</html>
