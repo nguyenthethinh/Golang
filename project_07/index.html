@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{{if .Loggedin}}
+Welcome: {{.Name}}
+<form method="post" action="logout">
+    <input type="button" name="submit" value="Logout"/>
+</form>
+{{else}}
+<form action="/" method="post">
+    <label for="name">Username:</label>
+    <input type="text" name="name" id="name" />
+    <label for="password">Password:</label>
+    <input type="text" name="password" id="password" />
+    <input type="submit" name="submit" id="submit" value="Login"/>
+</form>
+{{end}}
+</body>
+</html>
